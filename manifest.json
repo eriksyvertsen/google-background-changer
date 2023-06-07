@@ -3,13 +3,18 @@
   "name": "Google Background Changer",
   "version": "1.0",
   "description": "Changes the background of google.com every time you visit the page.",
-  "permissions": "tabs", "https://www.google.com/*",
-  "content_scripts": 
+  "permissions": [
+    "tabs",
+    "https://www.google.com/*"
+  ],
+  "content_scripts": [
     {
-      "matches": "https://www.google.com/*",
-      "js": "background-changer.js"
+      "matches": [
+        "https://www.google.com/*"
+      ],
+      "js": ["background-changer.js"]
     }
-  ,
+  ],
   "icons": {
     "48": "icon-48.png"
   },
